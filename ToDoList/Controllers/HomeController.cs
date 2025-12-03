@@ -35,16 +35,16 @@ namespace TodoList.Controllers
         {
             return View("Add");
         }
-        
+
         [HttpPost]
         public IActionResult Add(Item item)
         {
 
-                _listManager.AddTodoItem(new TodoItem()
-                {
-                    Text = item.Text,
-                    IsCompleted = false
-                });
+            _listManager.AddTodoItem(new TodoItem()
+            {
+                Text = item.Text,
+                IsCompleted = false
+            });
 
             return RedirectToAction("Index");
         }
@@ -53,6 +53,43 @@ namespace TodoList.Controllers
         public IActionResult Complete(int id)
         {
             _listManager.MarkComplete(id);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            var todo = _listManager.GetTodoItemById(id);
+            if (todo == null)
+            {
+                return NotFound();
+            }
+
+            var item = new Item()
+            {
+                Id = todo.Id,
+                IsCompleted = todo.IsCompleted,
+                Text = todo.Text
+            };
+
+            return View(item);
+        }
+
+        public IActionResult Update(Item item)
+        {
+            _listManager.Update(new TodoItem()
+            {
+                Id = item.Id,
+                Text = item.Text,
+                IsCompleted = item.IsCompleted
+            });
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete(int id)
+        {
+
+            _listManager.Delete(id);
             return RedirectToAction("Index");
         }
 

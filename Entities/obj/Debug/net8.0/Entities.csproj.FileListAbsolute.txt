@@ -9,3 +9,15 @@ D:\Project\ToDoList\Entities\obj\Debug\net8.0\Entities.dll
 D:\Project\ToDoList\Entities\obj\Debug\net8.0\refint\Entities.dll
 D:\Project\ToDoList\Entities\obj\Debug\net8.0\Entities.pdb
 D:\Project\ToDoList\Entities\obj\Debug\net8.0\ref\Entities.dll
+D:\Project\To-Do-List\Entities\bin\Debug\net8.0\Entities.deps.json
+D:\Project\To-Do-List\Entities\bin\Debug\net8.0\Entities.dll
+D:\Project\To-Do-List\Entities\bin\Debug\net8.0\Entities.pdb
+D:\Project\To-Do-List\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\To-Do-List\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+D:\Project\To-Do-List\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+D:\Project\To-Do-List\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+D:\Project\To-Do-List\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+D:\Project\To-Do-List\Entities\obj\Debug\net8.0\Entities.dll
+D:\Project\To-Do-List\Entities\obj\Debug\net8.0\refint\Entities.dll
+D:\Project\To-Do-List\Entities\obj\Debug\net8.0\Entities.pdb
+D:\Project\To-Do-List\Entities\obj\Debug\net8.0\ref\Entities.dll

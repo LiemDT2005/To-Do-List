@@ -14,6 +14,11 @@ namespace UseCases
             return repository.GetItems();
         }
 
+        public TodoItem? GetTodoItemById(int id)
+        {
+            return repository.GetById(id);
+        }
+
         public void AddTodoItem(TodoItem item)
         {
             repository.Add(item);
@@ -27,6 +32,11 @@ namespace UseCases
                 item.IsCompleted = true;
                 repository.Update(item);
             }
+        }
+
+        public void Update(TodoItem item)
+        {
+            repository.Update(item);
         }
 
         public void Delete(int id)
